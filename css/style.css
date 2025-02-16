@@ -7,3 +7,22 @@ body{
     padding-left: 33px;
     padding-top: 12px;
 }
+
+
+.image-stack {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+  }
+
+  .blackandwhite {
+    grid-column: 1 / span 8;
+    grid-row: 1; 
+    padding-top: 20%; 
+    z-index: 1;
+  }
+    
+.hand{
+    grid-column: 4 / -1;
+    grid-row: 1; // make this image be on the same row
+}
