@@ -8,130 +8,123 @@ body{
     padding-top: 12px;
 }
 
-
 .image-stack {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    position: relative;
-    border: 2px solid red;
-  }
-
-  .blackandwhite {
-    grid-column: 11 / -1;
-    grid-row: 1; 
-    padding-top: 23%; 
-    z-index: 2;
-    border: blue dashed 2px;
-    overflow: hidden;
-    position: relative;
-  }
-
-.blackandwhite img{
-  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  width: 100vw;
+  height: 100vh;
+  border: 2px solid red;
+  
 }
 
+.grid-cell {
+  border: 1px solid red;
+  width: 100%;
+  height: 50px;
+
+}
+
+.blackandwhite{
+  grid-column: 10 / -1;
+  grid-row:2/ 9; 
+  z-index: 2;
+  /* border: blue dashed 2px; */
+  overflow: hidden;
+  position: relative;
+  display: flex;  /* Add this */
+  align-items: flex-end;  /* Align content to the bottom */
+}
+.blackandwhite img{
+height: 400px ;
+}
 
 .hand{
-    grid-column: 8/ span 12;
-    grid-row: 1; 
-    z-index: 0;
-    padding-top: 32%;
-    position: relative;
-  
+  grid-column: 6 / 11;
+  grid-row:3/ 10; 
+  z-index: 2;
+  /* border: blue dashed 2px; */
+  overflow: hidden;
+  position: relative;
+  display: flex;  /* Add this */
+  align-items: flex-end;  /* Align content to the bottom */
 }
 
 .hand img{
-  height: 275px;
+height: 300px;
 }
 
-.one{
-  grid-column: 9 /11;
-    grid-row: 1; 
-    z-index: 3;
-    padding-top: 150%;
+.image-one{
+    grid-column: 9 / 12;
+    grid-row:7/ 13; 
+    z-index: 2;
+    /* border: blue dashed 2px; */
+    overflow: hidden;
     position: relative;
-}
-.one img{
-width: 300px;
+    display: flex;  /* Add this */
+    align-items: flex-end;  /* Align content to the bottom */
 }
 
-.two{
-  grid-column: 6/ 9;
-    grid-row: 1; 
-    z-index: 3;
-    padding-top: 150%;
-    position: relative;
+.image-one img{
+  width: 300px;
 }
-.two img{
-  width: 200px;
-  }
 
-.three img{
-    width: 100px;
-    }
-    
-  
-.four img{
-      width: 100px;
-      }
-      
-.column-1 {
-  border: 2px solid red;
-  grid-column: 1;
-  grid-row: 1;
+.image-two{
+  grid-column: 5 / 9;
+  grid-row:9/ 17; 
+  z-index: 2;
+  /* border: blue dashed 2px; */
+  overflow: hidden;
+  position: relative;
+  display: flex;  /* Add this */
+  align-items: flex-end;  /* Align content to the bottom */
 }
-.column-2 {
-  border: 2px solid red;
-  grid-column: 2;
-  grid-row: 1;
+.image-two img{
+  height: 400px;
 }
-.column-3 {
-  border: 2px solid red;
-  grid-column: 3;
-  grid-row: 1;
+
+.image-three{
+  grid-column: 2 / 6;
+  grid-row:9/ 17; 
+  z-index: 1;
+  /* border: blue dashed 2px; */
+  overflow: hidden;
+  position: relative;
+  display: flex;  /* Add this */
+  align-items: flex-end;  /* Align content to the bottom */
 }
-.column-4 {
-  border: 2px solid red;
-  grid-column: 4;
-  grid-row: 1;
+
+
+.image-four{
+  grid-column: 1 / 4;
+  grid-row:7/ 15; 
+  z-index: 0;
+  /* border: blue dashed 2px; */
+  overflow: hidden;
+  position: relative;
+  display: flex;  /* Add this */
+  align-items: flex-end;  /* Align content to the bottom */
 }
-.column-5 {
-  border: 2px solid red;
-  grid-column: 5;
-  grid-row: 1;
+
+.instagram {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;  /* Use 'Roboto' font */
+  font-size: 30px;
+  color: white;
+  position: fixed;  
+  bottom: 20px;     
+  left: 20px;     
+  z-index: 1000;   
+
 }
-.column-6 {
-  border: 2px solid red;
-  grid-column: 6;
-  grid-row: 1;
-}
-.column-7 {
-  border: 2px solid red;
-  grid-column: 7;
-  grid-row: 1;
-}
-.column-8 {
-  border: 2px solid red;
-  grid-column: 8;
-  grid-row: 1;
-}
-.column-9 {
-  border: 2px solid red;
-  grid-column: 9;
-  grid-row: 1;
-}
-.column-10 {
-  border: 2px solid red;
-  grid-column: 10;
-  grid-row: 1;
-}
-.column-11 {
-  border: 2px solid red;
-  grid-column: 11;
-  grid-row: 1;
-}
-.column-12 {
-  border: 2px solid red;
-  grid-column: 12;
-  grid-row: 1;
+.website {
+  text-decoration: none; 
+  font-family: 'Roboto', sans-serif; 
+  font-size: 30px;   
+  color: white;          
+  position: fixed;  
+  bottom: 20px;           
+  right: 20px;         
+  z-index: 1000;         
+  white-space: nowrap;    
 }
